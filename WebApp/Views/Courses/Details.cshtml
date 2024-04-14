@@ -1,0 +1,11 @@
+﻿@model SingleCourse
+
+ @if(Model.Id != null)
+{
+    <div class="details-page">
+            <partial name="~/Views/Courses/_SingleCourseTop.cshtml" />
+               <partial name="~/Views/Courses/_CourseDescription.cshtml" />
+            <partial name="~/Views/Courses/_AdditionalCourseInfo.cshtml" />
+    </div>
+  
+}

@@ -1,0 +1,30 @@
+﻿
+@if (Context.Request.Cookies["consent"] == null)
+{
+    <div id="cookie-consent" class="alert alert-light fixed-bottom">
+        <div class="container"> 
+         <span> This website uses cookies to imporve user experince</span>
+         <button onclick="acceptCookies()" class="btn-theme"> Accept</button>
+        </div>
+
+    </div>
+
+    <script>
+        function acceptCookies() {
+            try {
+                document.querySelector('#cookie-consent').style.display = 'none'
+
+                fetch(`/sitesettings/consent`, {
+                    method: 'post',
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                })
+
+
+            } 
+            catch { }
+        }
+
+    </script>
+}

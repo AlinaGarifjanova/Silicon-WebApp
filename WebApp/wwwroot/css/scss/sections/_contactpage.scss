@@ -1,0 +1,132 @@
+.contactus {
+    background-color: var(--color-gray-100);
+
+    @include lg{
+        height: fit-content;
+    }
+
+    @include xl{
+        height: fit-content;
+    }
+
+    @include xxl{
+        height: fit-content;
+    }
+
+    .image-map{
+        width: 100%;
+
+        @include lg{
+            margin-top:-18%; ;
+        }
+    
+        @include xl{
+            
+        }
+    
+        @include xxl{
+            
+        }
+    }
+
+    .background {
+
+        .container {
+
+            .breadcrumb {
+                color: var(--color-gray-600);
+                margin-top: 15px;
+            }
+
+            .content {
+                margin-bottom: 40px;
+                margin-top: 60px;
+
+                .contact-info {
+                  //  margin-top: 40px;
+                    
+                    @include lg{
+                        display: flex;
+                    }
+
+                    @include xl{
+                        display: flex;
+                    }
+
+                    @include xxl{
+                        display: flex;
+                    }
+
+                    h1 {
+                        font-size: 40px;
+                    }
+
+                    .email-contact {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        padding:1%;
+
+
+                        @include lg {
+                          
+                        }
+
+                        @include xl {
+
+                        }
+
+                        .email-group {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 10px;
+
+                            h4 {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    .contact-careers {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        padding-bottom: 15px;
+
+                        @include lg {
+                        }
+
+                        @include xl {
+
+                        }
+
+
+                        .career-group {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 10px;
+
+                            h2 {
+                                font-size: 24px;
+                                margin-bottom: 10px;
+                            }
+
+
+                        }
+                    }
+
+                    .contact-btn {
+                        background-color: var(--color-gray-100);
+                        color: var(--color-gray-900);
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

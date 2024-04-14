@@ -1,0 +1,105 @@
+.subscribe {
+    background-color: var(--color-gray-100);
+    padding: 20px;
+    margin-top: 20px;
+
+    .container {
+        width: 95%;
+        padding: 70px;
+
+        .top-content {
+            text-align: start;
+        }
+
+        .content {
+            p {
+                margin-top: 10px;
+            }
+
+            form {
+
+                @include xl {
+                    display: grid;
+                    align-content: space-between;
+                }
+
+
+
+
+
+                .subscribe-content {
+
+                    @include lg {
+                        display: grid;
+                        margin-top: 20px;
+                    }
+
+                    @include xl {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        margin-top: 20px;
+                        flex-wrap: wrap;
+                    }
+
+                    .subscribe-input {
+                        width: 75%;
+
+                        .usersubscribe {
+                            margin-top: 30px;
+                            margin-bottom: 25px;
+                            background-image: url("../../../images/subscribe/bx-envelope.svg");
+                            background-repeat: no-repeat;
+                            background-size: 20px;
+                            padding-left: 40px;
+                            background-position: 10px;
+
+                            @include xl {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+
+                    h5 {
+                        @include xl {
+                            width: 50%;
+                        }
+                    }
+
+                    .checkbox-group {
+
+
+                        @include xl {
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .input-group {
+
+                    @include lg {
+                        margin-top: 15px;
+                        gap: 15px;
+                    }
+
+                    @include xl {
+                        display: flex;
+                        align-items: center;
+                        gap: 25px;
+                        //width: 87%;
+                    }
+                }
+
+                .btn-theme {
+                    padding: 13px 25px;
+                  
+                    
+                    @include xl{
+                        width: 25%;
+                        }
+                }
+            }
+        }
+    }
+}

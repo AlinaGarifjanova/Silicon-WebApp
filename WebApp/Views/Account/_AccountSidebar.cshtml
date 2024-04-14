@@ -1,0 +1,37 @@
+﻿@{
+    var user = await UserManager.GetUserAsync(User);
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+
+@if(user != null)
+{
+    <section class="account-sidebar">
+        <div class="sidebar">
+            <div class="sidebar-image">
+                <img class="image-avatar" src="@Configuration["FilePath:SidebarImagePath"]/@user.ProfileImage" alt="avatar">
+
+                <form enctype="multipart/form-data" method="post" asp-action="SidebarImageUploader" asp-controller="Account">
+                    <input id="fileUploader" type="file" name="file" hidden/>
+                    <label for="fileUploader" class="btn-circle-small"><i class="fa-regular fa-refresh"></i></label>
+                </form>
+            </div>
+           
+            
+            
+            <div class="sidebar-info">
+                <h3 class="sidebar-h3">@user.FirstName  @user.LastName</h3>
+                <p class="sidebar-email">@user.Email</p>
+            </div>
+
+
+            <nav class="account-nav">
+                <a class="btn btn-nav @(currentAction == "Details" ? "active" : "")" asp-action="Details" asp-controller="Account"><i class="fa-regular fa-cog"></i>Account Details</a>
+                <a class="btn btn-nav @(currentAction == "Security" ? "active" : "")" asp-action="Security" asp-controller="Account"><i class="fa-regular fa-cog"></i>Security</a>
+                <a class="btn btn-nav @(currentAction == "SignOut" ? "active" : "")" asp-action="SignOut" asp-controller="Auth"><i class="fa-regular fa-arrow-right-from-bracket"></i>Sign out</a>
+            </nav>
+        </div>
+    </section>
+
+    
+}
+

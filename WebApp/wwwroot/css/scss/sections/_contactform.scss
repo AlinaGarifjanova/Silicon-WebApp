@@ -1,0 +1,94 @@
+
+.contactform-box {
+    width: 83%;
+   // margin-top: 50px;
+    background-color: var(--color-gray-000);
+    border: 1px solid var(--color-white);
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 2px rgba(0 0 0.1);
+
+    @include lg {
+        width: 70%;
+        z-index: 1;
+    }
+
+    @include xl {
+        width: 65%;
+        z-index: 1;
+    }
+
+    @include xxl {
+        width: 50%;
+        z-index: 1;
+    }
+  
+
+    .form-container {
+        
+        h2 {
+            color: var(--color-gray-900);
+        }
+
+        .form-content {
+            margin-top: 25px;
+
+            .input-service {
+
+                @include xl {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+
+                .input-label-wrapper {
+
+                    @include xl {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .optional {
+                    color: var(--color-gray-600);
+                }
+
+                .input-wrapper {
+
+                    @include xl {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .ServiceType-icon {
+                        background-image: url("../../../images/contactpage/arrow-down.svg");
+                        background-repeat: no-repeat;
+                        background-position: right center;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .input-group {
+                gap:10px;
+
+                @include xl {
+                    margin-bottom: 12px;
+                }
+
+
+                .input-label {
+
+                    @include xl {
+                        margin-top: 20px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        .btn-theme {
+            margin-top: 20px;
+        }
+    }
+}

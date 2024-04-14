@@ -1,0 +1,55 @@
+﻿@model AccountUser
+
+@{
+
+    ViewData["Title"] = "Account Details";
+    var user = await UserManager.GetUserAsync(User);
+}
+
+<section class="account-details-basic">
+    <div class="container">
+       
+        <form method="post" asp-controller="Account" asp-action="UpdateBasic">
+                  <h1>Account Details</h1>
+                 <h5 class="theme-h5">Basic Info</h5>
+
+                    <div class="form-content">
+                        <div class="test">
+                            <div class="input-firstname input-group">
+                                <label class="input-label" asp-for="FirstName" ></label>
+                                <input class="inputs-group" asp-for="FirstName" />
+                                <span asp-validation-for="FirstName"></span>
+                            </div>
+
+                             <div class="input-lastname input-group">
+                                <label class="input-label" asp-for="LastName"></label>
+                                <input class="inputs-group" asp-for="LastName" />
+                                <span asp-validation-for="LastName"></span>
+                              </div>
+
+                               <div class="input-email input-group">
+                                 <label class="input-label">Email</label>
+                                <input class="inputs-group" asp-for="@user.Email" disabled />
+                            </div>
+
+                               <div class="input-phone input-group">
+                                  <label class="input-label" asp-for="Phone"></label>
+                                  <input class="inputs-group" asp-for="Phone" />
+                                  <span asp-validation-for="Phone"></span>
+                               </div>
+                </div>
+                                <div class="input-bio input-group">
+                                    <label class="input-label" asp-for="Bio"></label>
+                                    <input class="inputs-bio" asp-for="Bio" />
+                                    <span asp-validation-for="Bio"></span>
+                                </div> 
+                           </div>
+                          
+                            <div class="buttons-account">
+                                <button class="btn-social-login" type="reset">Cancel</button>
+                                <button class="btn btn-theme" type="submit">Save changes</button>
+                            </div>
+                        </form>
+      </div>
+</section>
+

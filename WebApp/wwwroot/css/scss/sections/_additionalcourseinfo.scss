@@ -1,0 +1,486 @@
+.additional-info {
+    .container {
+      
+        h2 {
+            margin: 27px 0;
+        }
+
+        .details-1 {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin: 20px 0;
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            .elips {
+                width: 60px;
+                height: 60px;
+                background-color: var(--color-gray-100);
+                border-radius: 50%;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+
+                @include sm {
+                    width: 70px;
+                    height: 60px;
+                }
+
+                @include md {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include lg {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include xl {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                .ring {
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--color-white);
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 9px;
+                    left: 10px;
+
+                    .number {
+                        display: block;
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: var(--color-black);
+                    }
+                }
+            }
+
+
+            .details-1-content {
+                width: 85%;
+
+                @include sm {
+                    width: 100%;
+                }
+
+                @include md {
+                    width: 80%;
+                }
+
+                @include lg {
+                    width: 60%;
+                }
+
+                @include xl {
+                    width: 60%;
+                }
+            }
+        }
+
+        .details-2 {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin: 20px 0;
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            .elips {
+                width: 60px;
+                height: 60px;
+                background-color: var(--color-gray-100);
+                border-radius: 50%;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+
+                @include sm {
+                    width: 70px;
+                    height: 60px;
+                }
+
+                @include md {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include lg {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include xl {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                .ring {
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--color-white);
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 9px;
+                    left: 10px;
+
+                    .number {
+                        display: block;
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: var(--color-black);
+                    }
+                }
+            }
+
+            .details-2-content {
+                width: 85%;
+
+                @include sm {
+                    width: 100%;
+                }
+
+                @include md {
+                    width: 80%;
+                }
+
+                @include lg {
+                    width: 60%;
+                }
+
+                @include xl {
+                    width: 60%;
+                }
+            }
+        }
+
+
+        .details-3 {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin: 20px 0;
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            .elips {
+                width: 60px;
+                height: 60px;
+                background-color: var(--color-gray-100);
+                border-radius: 50%;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+
+                @include sm {
+                    width: 70px;
+                    height: 60px;
+                }
+
+                @include md {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include lg {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include xl {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                .ring {
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--color-white);
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 9px;
+                    left: 10px;
+
+                    .number {
+                        display: block;
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: var(--color-black);
+                    }
+                }
+            }
+
+            .details-3-content {
+                width: 85%;
+
+                @include sm {
+                    width: 100%;
+                }
+
+                @include md {
+                    width: 80%;
+                }
+
+                @include lg {
+                    width: 60%;
+                }
+
+                @include xl {
+                    width: 60%;
+                }
+            }
+        }
+
+
+        .details-4 {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin: 20px 0;
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            .elips {
+                width: 60px;
+                height: 60px;
+                background-color: var(--color-gray-100);
+                border-radius: 50%;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+
+                @include sm {
+                    width: 70px;
+                    height: 60px;
+                }
+
+                @include md {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include lg {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include xl {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                .ring {
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--color-white);
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 9px;
+                    left: 10px;
+
+                    .number {
+                        display: block;
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: var(--color-black);
+                    }
+                }
+            }
+
+            .details-4-content {
+                width: 85%;
+
+                @include sm {
+                    width: 100%;
+                }
+
+                @include md {
+                    width: 80%;
+                }
+
+                @include lg {
+                    width: 60%;
+                }
+
+                @include xl {
+                    width: 60%;
+                }
+            }
+        }
+
+        .details-5 {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin: 20px 0;
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            .elips {
+                width: 60px;
+                height: 60px;
+                background-color: var(--color-gray-100);
+                border-radius: 50%;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+
+                @include sm {
+                    width: 70px;
+                    height: 60px;
+                }
+
+                @include md {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include lg {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include xl {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                .ring {
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--color-white);
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 9px;
+                    left: 10px;
+
+                    .number {
+                        display: block;
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: var(--color-black);
+                    }
+                }
+            }
+
+            .details-5-content {
+                width: 75%;
+
+                @include sm {
+                    width: 100%;
+                }
+
+                @include md {
+                    width: 80%;
+                }
+
+                @include lg {
+                    width: 60%;
+                }
+
+                @include xl {
+                    width: 60%;
+                }
+            }
+        }
+
+
+        .details-6 {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin: 20px 0;
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            .elips {
+                width: 60px;
+                height: 60px;
+                background-color: var(--color-gray-100);
+                border-radius: 50%;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+
+                @include sm {
+                    width: 70px;
+                    height: 60px;
+                }
+
+                @include md {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include lg {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @include xl {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                .ring {
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--color-white);
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 9px;
+                    left: 10px;
+
+                    .number {
+                        display: block;
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: var(--color-black);
+                    }
+                }
+            }
+
+            .details-6-content {
+                width: 85%;
+
+                @include sm {
+                    width: 100%;
+                }
+
+                @include md {
+                    width: 80%;
+                }
+
+                @include lg {
+                    width: 60%;
+                }
+
+                @include xl {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

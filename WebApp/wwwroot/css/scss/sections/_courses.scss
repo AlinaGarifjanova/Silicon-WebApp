@@ -1,0 +1,202 @@
+
+.courses {
+
+    .container {
+
+        .top-section {
+
+            @include md {
+                display: grid;
+            }
+
+            @include lg {
+                display: grid;
+                margin: 2rem 0;
+                // align-items: center;
+                justify-content: start;
+            }
+
+            @include xl {
+                display: flex;
+                justify-content: space-between;
+                margin-: 2rem 0;
+                align-items: center;
+            }
+
+            h1 {
+            }
+
+            .form-info {
+                display: flex;
+                justify-content: start;
+                gap: 1.5rem;
+
+
+                @include xl {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 1.5rem;
+                }
+
+
+                .input-search-group {
+                    input {
+                        position: relative;
+                        background-image: url(../../../images/course/bx-search.svg);
+                        background-repeat: no-repeat;
+                        width: 15rem;
+                        height: 43.5px;
+                        background-size: 17px;
+                        background-position: 13.5rem 14px;
+                    }
+                }
+            }
+        }
+
+        .courses-box {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+
+            @include md {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+
+            @include lg {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+
+            @include xl {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1.5rem;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .course {
+                position: relative;
+                display: block;
+                border-radius: 8px;
+                overflow: hidden;
+                text-decoration: none;
+                box-shadow: 0 0 14px 2px var(--color-gray-400);
+                color: var(--color-gray-800);
+
+                &:hover {
+                    box-shadow: 0 0 16px 6px car(--color-gray-600);
+                }
+            }
+
+            .bestseller {
+                position: absolute;
+                top: 1.5rem;
+                left: 0.8rem;
+                background-color: var(--color-success);
+                color: var(--color-white);
+                padding: 4px 12px;
+                border-radius: 3px;
+            }
+
+            .bookmark {
+                z-index: 50;
+                position: absolute;
+                top: 1rem;
+                left: 28rem;
+                color: var(--color-black);
+
+                @include md {
+                    left: 17rem;
+                }
+
+                @include lg {
+                    left: 24rem;
+                }
+
+                @include xl {
+                    left: 18.5rem;
+                }
+
+                @include xxl {
+                    left: 22rem;
+                }
+
+
+                i {
+                    z-index: 55;
+                }
+
+                i:hover{
+                    color: var(--color-gray-800);
+                }
+            }
+
+            .box-content {
+                padding: 20px 30px;
+
+                .title {
+                    font-size: 15px;
+                }
+
+                .author {
+                    font-size: 16px;
+                    margin: 20px 0;
+                }
+
+                .price {
+                    display: flex;
+                    font-size: 16px;
+                    font-weight: bold;
+                    gap: 20px;
+
+                    .discount-price {
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: var(--color-warning);
+                    }
+
+                    .discount-price-enabled {
+                        color: var(--color-gray-600);
+                        text-decoration: line-through;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+                    .orginal-price {
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: var(--color-theme);
+                    }
+                }
+
+                .bottom-part {
+                    display: flex;
+                    gap: 25px;
+                    color: var(--color-gray-600);
+                    border-top: 1px solid var(--color-gray-500);
+                    margin-top: 20px;
+
+                    .hours {
+                        i {
+                            margin-right: 7px;
+                        }
+                    }
+
+                    .likes {
+                        i {
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+﻿
+<section class="small-box">
+    <div class="small-container">
+        <h3>This course includes</h3>
+        <div class="content-box">
+            <div class="smallbox-hours">
+                <i class="fa-sharp fa-light fa-presentation-screen"></i> <p data-value="@Model.Hours">@Model.Hours hours on-demand video</p>
+            </div>
+            <div class="smallbox-articles">
+                <i class="fa-sharp fa-light fa-file"></i><p>18 articles</p>
+            </div>
+            <div class="smallbox-downloads">
+                <i class="fa-regular fa-arrow-down-to-line"></i><p>25 downloadable resources</p>
+            </div>
+            <div class="infinity">
+                <i class="fa-regular fa-infinity"></i><p>Full lifetime access</p>
+            </div>
+            <div class="trophy">
+                <i class="fa-regular fa-trophy"></i><p>Certification of completion</p>
+
+            </div>
+        </div>
+        <div class="box-price">
+            @if (!string.IsNullOrEmpty(Model.DiscountedPrice))
+            {
+                <div class="discount-price">@Model.DiscountedPrice</div>
+            }
+            <div class="originalprice" @(!string.IsNullOrEmpty(Model.DiscountedPrice)? "discount-enabled": "")>
+                @Model.OriginalPrice
+            </div>
+        </div>
+
+    </div>
+</section>
+

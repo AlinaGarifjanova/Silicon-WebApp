@@ -1,0 +1,25 @@
+﻿@model AccountSecurity
+
+<section class="delete-account">
+    <div class="container">
+       <div class="content">
+            <div class="delete-Details">
+                <h5>Delete account</h5>
+                <p>When you delete your account, your public profile will be deactivated immediately. If you change your mind before the 14 days are up, sign in with your email and password, and we’ll send you a link to reactivate your account.</p>
+                    <form id="deleteaccountform" method="post" asp-action="DeleteAccount" asp-controller="Account">
+                        <div class="checkbox-group">
+                            <input asp-for="DeleteAccount.IsDeleted" />
+                            <label asp-for="DeleteAccount.IsDeleted"></label>
+                            <span asp-validation-for="DeleteAccount.IsDeleted"></span>
+                        </div>
+                           <div class="delete-account-btn"> 
+                               <button class="btn-delete" type="submit">Delete</button>
+                               <input type="hidden" name="confirmDelete" value="true"/>
+                           </div>
+                    </form>
+                </div>
+            </div>
+       </div>
+</section>
+
+<script src="~/js/deleteaccount.js"></script>

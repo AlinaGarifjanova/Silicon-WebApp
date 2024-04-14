@@ -1,0 +1,163 @@
+
+form {
+    display: grid;
+    width: 100%;
+    font-size: 16px;
+
+
+    .input-label {
+        font-weight: 600;
+        padding: 2px 0;
+        margin-top: 15px;
+    }
+
+    .input-group {
+        display: grid;
+        position: relative;
+    }
+
+    .checkbox-group {
+
+        label {
+            font-weight: 400;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+    .input-fields {
+        display: flex;
+    }
+
+
+    select,
+    input,
+    textarea {
+        font-family: 'manrope', 'Sans Serif';
+        font-size: 1em;
+        color: var(--color-gray-900);
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid var(--color-gray-400);
+        background-color: var(--color-gray-000);
+
+        &::placeholder {
+            opacity: 0.5;
+        }
+    }
+
+    input[type=checkbox] {
+        height: 20px;
+        width: 20px;
+        margin: 0;
+    }
+
+    .field-validation-error {
+        position: absolute;
+        bottom: -25px;
+        color: var(--color-warning);
+        font-size: 0.9em;
+        padding: 2px 0;
+    }
+
+   input-validation-error {
+       border: 1px solid var(--color-warning);
+    }
+
+}
+.input-search-group{
+    position: relative;
+
+    input{
+        position: relative;
+        padding-right: 20px;
+    }
+
+    i{
+        position: absolute;
+        top: 14px;
+        right: 1rem;
+    }
+}
+
+
+.select{
+    position: relative;
+    width: 15rem;
+    background-image: url('../../../images/course/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 13rem 17px;
+
+
+    .selected{
+        padding: 10px 16px;
+        border: 1px solid var(--color-gray-300);
+        cursor: pointer;
+        border-radius: 8px;
+    }
+}
+
+
+.select-option{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    border: 1px solid var(--color-gray-300);
+    background-color: var(--color-gray-000);
+
+
+    .option{
+        padding: 15px;
+        cursor: pointer;
+
+    }
+
+    .option:hover{
+        background-color: var(--color-gray-600);
+    }
+}
+
+
+.custom-select {
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../../../images/course/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 31rem 17px;
+}
+
+.custom-selected {
+    padding: 10px 16px;
+    border: 1px solid var(--color-gray-300);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.custom-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    border: 1px solid var(--color-gray-300);
+    background-color: var(--color-gray-000);
+}
+
+.custom-option {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.custom-option:hover {
+    background-color: var(--color-gray-600);
+}

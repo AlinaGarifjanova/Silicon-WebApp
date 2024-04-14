@@ -1,0 +1,44 @@
+﻿
+
+ @if(Model.Id != null)
+  {
+
+    <section class="single-course">
+            <img src="~/images/course/Header1.svg" />
+            <div class="container">
+                <div class="overlay">
+
+                    <div class="details-top">
+
+                        @if (Model.IsBestseller && Model.IsDigital)
+                        {
+                            <div class="digitalbestsell">
+                                <div class="bestseller">Best seller</div>
+                                <div class="digital">Digital</div>
+                            </div>
+
+                        }
+
+                        <div class="top-title">
+                            <h1 data-value="@Model.Title">@Model.Title</h1>
+                            <h6>Egestas feugiat lorem eu neque suspendisse ullamcorper scelerisque aliquam mauris.</h6>
+                        </div>
+
+                        <div class="rating">
+                            <img class="stars" src="~/images/course/rating.svg" />
+                            <div class="likes">
+                                <i class="fa-regular fa-thumbs-up"></i>@Model.LikesInProcent @Model.NumberofLikes
+                            </div>
+                            <div class="hours">
+                                <i class="fa-regular fa-clock"></i>@Model.Hours hours
+                            </div>
+                        </div>
+
+                        <div class="author" data-value="@Model.Author">Created By @Model.Author </div>
+
+                    </div>
+                </div>
+                </div>
+    </section>
+
+  }

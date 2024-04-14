@@ -1,0 +1,48 @@
+﻿@model AddressUser
+
+
+<section class="account-address">
+    <div class="container">
+        <form method="post" asp-controller="Account" asp-action="UpdateAddress">
+            <h5 class="theme-h5">Address</h5>
+
+            <div class="form-content">
+             
+                <div class="input-addressline1 input-group">
+                    <label class="input-label" asp-for="AddressLine1"></label>
+                    <input asp-for="AddressLine1" />
+                    <span asp-validation-for="AddressLine1"></span>
+                </div>
+
+
+
+                <div class="input-addressline2 input-group">
+                    <label class="input-label" asp-for="AddressLine2"></label>
+                    <input asp-for="AddressLine2" />
+                    <span asp-validation-for="AddressLine2"></span>
+                </div>
+           
+                <div class="inputpostal-city">
+
+                    <div class="input-postalcode input-group">
+                         <label class="input-label" asp-for="PostalCode"></label>
+                         <input class="inputs-group " asp-for="PostalCode" />
+                         <span asp-validation-for="PostalCode"></span>
+                    </div>
+
+                    <div class="input-city input-group">
+                          <label class="input-label" asp-for="City"></label>
+                          <input class="inputs-group " asp-for="City" />
+                          <span asp-validation-for="City"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-account">
+                <button class="btn-social-login" type="reset">Cancel</button>
+                <button id="btn-submit" class="btn btn-theme" type="submit">Save changes</button>
+            </div>
+          
+        </form>
+    </div>
+</section>
+

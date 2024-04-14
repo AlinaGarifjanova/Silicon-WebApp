@@ -1,0 +1,30 @@
+﻿
+@if (Model.Id != null)
+{   <section class="course-description">
+        <div class="container">
+            <div class="coursedescription">
+                <div class="container-description">
+                    <div class="descrition">
+                        <h2>Course Description</h2>
+                        <p data-value="@Model.CourseDescription">@Model.CourseDescription</p>
+                    </div>
+                  
+                </div>
+              
+              
+                <div class="learnfromthis">
+                    <h3>What you will learn from this</h3>
+                    <ul>
+                        <li data-value="@Model.learn1">@Model.learn1</li>
+                        <li data-value="@Model.learn2">@Model.learn2</li>
+                        <li data-value="@Model.learn3">@Model.learn3</li>
+                        <li data-value="@Model.learn4">@Model.learn4</li>
+                        <li data-value="@Model.learn5">@Model.learn5</li>
+                    </ul>
+                </div>
+            </div>
+            <partial name="~/Views/Courses/_Smallbox.cshtml" />
+        </div>
+    </section>
+
+}

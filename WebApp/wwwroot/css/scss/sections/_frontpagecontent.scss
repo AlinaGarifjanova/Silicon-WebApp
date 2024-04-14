@@ -1,0 +1,88 @@
+.content-section {
+    .container {
+        display: flex;
+        justify-content: center;
+
+        @include xl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .content {
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            @include xl {
+                display: flex;
+                gap: 50px;
+            }
+
+            .image-frontpage {
+
+
+                @include sm {
+                    width: 300px;
+                }
+
+                @include md {
+                    width: 400px;
+                }
+
+                @include lg {
+                    width: 550px;
+                }
+
+                @include xl {
+                    width: 650px;
+                }
+
+                @include xxl {
+                    width: 750px;
+                }
+            }
+
+            .text-container {
+                display: grid;
+                justify-content: center;
+
+                ul {
+                    list-style-image: url(../../../images/fronpage/bx-check-circle.svg);
+                    line-height: 2;
+                    font-size: 16px;
+                }
+
+
+                @include xl {
+                    justify-content: start;
+                    margin-left: 2em;
+                    margin-top: 8.5%;
+                }
+
+                h2 {
+                    text-align: center;
+                    line-height: 2;
+
+                    @include xl {
+                        text-align: left;
+                    }
+                }
+            }
+
+            .btn-learn-more {
+                justify-items: center;
+                margin-top: 20px;
+
+
+                @include xl {
+                    width: 159px;
+                    height: 44px;
+                    font-size: 14px !important;
+                    padding: 11px 28px !important;
+                }
+            }
+        }
+    }
+}

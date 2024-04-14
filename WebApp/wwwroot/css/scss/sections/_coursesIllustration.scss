@@ -1,0 +1,36 @@
+.courses-illustration {
+    .container-background {
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-gray-100);
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 38%;
+        
+            .main-content{
+                p{
+                    font-size: 24px;
+                    color: var(--color-gray-700);
+                    margin-bottom: 20px;
+                }
+
+                h2{
+                    color: var(--color-gray-900);
+                    margin-bottom: 20px;
+
+                    .skills{
+                        color: var(--color-theme);
+                    }
+                }
+            }
+          }
+
+        .courses-image{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

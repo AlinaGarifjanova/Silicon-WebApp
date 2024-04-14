@@ -1,0 +1,46 @@
+.account-address {
+    border-top: 1px solid var(--color-gray-400);
+    display: grid;
+    justify-content: flex-start;
+    padding: 20px;
+
+    .container {
+        form {
+            h5 {
+                color: var(--color-theme);
+                margin: 20px 0;
+            }
+
+            .form-content {
+
+                .input-addressline1 {
+                   
+                }
+
+
+                .input-addressline2 {
+                    
+                }
+
+                .inputpostal-city {
+                    display: grid;
+                    gap: 30px;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: 'Postalcode City';
+                }
+            }
+
+            .buttons-account {
+                margin-top: 30px;
+
+                .btn-social-login {
+                    color: var(--color-black);
+                }
+
+                .btn-theme {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}

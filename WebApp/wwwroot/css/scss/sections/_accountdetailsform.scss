@@ -1,0 +1,49 @@
+.account-details-basic {
+    display: grid;
+    justify-content: flex-start;
+    padding: 20px;
+
+    .container {
+
+        form {
+
+            h1 {
+                margin: 20px 0;
+            }
+
+            h5 {
+                color: var(--color-theme);
+            }
+
+            .form-content {
+                .test {
+                    display: grid;
+                    gap: 30px;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: 'firstname lastname' 'email phone';
+                }
+
+                input {
+                   
+                }
+
+                .inputs-bio {
+                    height: 10rem;
+
+                }
+            }
+
+            .buttons-account {
+                margin-top: 30px;
+                margin-bottom: 20px;
+
+                .btn-social-login{
+                    color: var(--color-black)
+                }
+                .btn-theme {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}

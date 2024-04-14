@@ -1,0 +1,33 @@
+.error{
+    .container{
+        display: grid;
+        .content{
+            display: grid;
+            justify-items: center;
+            margin-top: 8rem;
+            margin-bottom: 5rem;
+            img{
+                
+
+            }
+            h1{
+
+            }
+
+            p{
+                margin: 30px 0;
+
+            }
+
+            .btn-theme{
+                padding: 16px 35px;
+                display: flex;
+                align-items: center;
+
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

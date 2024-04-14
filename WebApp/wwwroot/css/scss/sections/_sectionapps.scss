@@ -1,0 +1,79 @@
+.section-apps {
+    background-color: var(--color-gray-100);
+
+    @include xl {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+
+    .container {
+        display: grid;
+        justify-items: center;
+        margin-top: 10%;
+
+        @include xl {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .phones {
+            width: 70%;
+
+            @include xl {
+                width: 35%;
+            }
+        }
+
+
+        .content {
+            width: 80%;
+
+            @include xl {
+                width: 45%;
+            }
+
+            .rating{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+
+            .app-store {
+                display: flex; 
+               // justify-content: space-between;
+                align-items: flex-end;
+                margin-top: 5%;
+                gap: 80px;
+                
+            }
+
+            .google-play{
+                display: flex; 
+                //justify-content: space-between;
+                align-items: flex-end;
+                margin-top: 10%;
+                margin-bottom: 10%;
+                gap: 80px;
+
+            }
+
+            .app-name{
+                color: var(--color-gray-600);
+            }
+
+            h1{
+                margin-top: 8%;
+                color: var(--color-gray-900);
+            }
+
+            p{
+                color: var(--color-gray-700);
+            }
+        }
+    }
+}

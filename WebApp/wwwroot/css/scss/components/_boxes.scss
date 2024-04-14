@@ -1,0 +1,42 @@
+@mixin boxes{
+    padding:25px;
+    transition: all 0.1s ease-in-out;
+}
+
+.benefits-box {
+   @include boxes;
+
+    &:hover{
+        background-color: var(--color-white);
+    }
+
+   h5{
+       font-size: 20px;
+       margin: 0;
+   }
+
+   img{
+       padding: 20px;
+       background-color: var(--color-gray-100);
+       margin: 20px;
+       border-radius: 8px;
+
+   }
+}
+
+.tools-box{
+    @include boxes;
+
+    &:hover{
+        background-color: var(--color-gray-100);
+    }
+
+    p{
+        margin-top: 15px;
+        color: var(--color-gray-700);
+        font-size: 16px;
+    }
+
+}
+
+

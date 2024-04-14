@@ -1,0 +1,52 @@
+.course-description {
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        .coursedescription {
+            display: flex;
+            flex-direction: column;
+
+            .container-description {
+                display: flex;
+                gap: 70px;
+
+                .descrition {
+                    width: 65%;
+
+                    @include md {
+                        width: 75%;
+                    }
+
+                    @include lg {
+                        width: 75%;
+                    }
+
+                    @include xl {
+                        width: 75%;
+                    }
+
+                    h2 {
+                        margin: 27px 0;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .learnfromthis {
+                h3 {
+                    margin: 40px 0;
+                }
+
+                li {
+                    list-style-image: url(../../../images/course/bx-check-circle.svg);
+                    margin: 10px 0;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

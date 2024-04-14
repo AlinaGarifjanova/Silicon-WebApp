@@ -1,0 +1,62 @@
+.signup {
+    margin-bottom: 30px;
+
+    .container {
+        width: 92%;
+
+        @include xl{
+            width:100%;
+            display:flex;
+            justify-content:center;
+        }
+
+        form {
+
+            @include xl{
+                width:50%;
+            }
+            h1 {
+                margin-bottom: 0;
+            }
+
+            .form-content {
+                display: grid;
+                margin-top: 28px;
+                gap: 25px;
+                grid-template-columns: 1fr;
+                grid-template-areas: 'firstname' 'lastname' "email" "password" "confirm" "terms" "submit";
+
+                @include md {
+                  //  grid-template-columns: 1fr 1fr;
+                    grid-template-areas: 'firstname lastname' "email email" "password password" "confirm confirm" "terms terms" "submit submit";
+                }
+
+                .input-firstname {
+                    grid-area: firstname;
+                }
+
+                .input-lastname {
+                    grid-area: lastname;
+                }
+
+                .input-email {
+                    grid-area: email;
+                }
+
+                .input-password {
+                    grid-area: password;
+                }
+
+                .input-confirm {
+                    grid-area: confirm;
+                }
+
+
+                .checkbox.group {
+                    grid-area: terms;
+                    margin-bottom: 28px;
+                }
+            }
+        }
+    }
+}

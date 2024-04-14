@@ -1,0 +1,113 @@
+.frontpagepic {
+    background: linear-gradient( 90deg,var(--color-gray-900) 50%, var(--color-gray-000)50% );
+    height: 80vh;
+
+    @include lg {
+        display: grid;
+    }
+
+    @include xl {
+        display: grid;
+        align-content: space-around;
+        justify-content: center;
+        position: relative;
+    }
+
+    .vl {
+        border: 1.9px solid var(--color-theme);
+        color: var(--color-theme);
+        z-index: 1;
+        position: absolute;
+        height: inherit;
+        left: 72%;
+
+
+        @include sm {
+            position: absolute;
+            height: inherit;
+            left: 50%;
+        }
+
+        @include lg {
+            position: absolute;
+            height: inherit;
+            left: 50%;
+        }
+
+        @include xl {
+            z-index: 1;
+            height: 100%;
+            margin-left: -3px;
+            top: 0;
+        }
+    }
+
+    h2 {
+        background: linear-gradient(0 deg, var(--color-white) 50%, var(--color-gray-900) 50%);
+        color: var(--color-white);
+        padding: 10px;
+        mix-blend-mode: difference;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+
+        @include md {
+            margin-top: 20px;
+        }
+
+        @include lg {
+            margin-top: 60px;
+        }
+
+        @include xl {
+            top: 10%;
+            left: 51%;
+            background: linear-gradient(0 deg, var(--color-white) 50%, var(--color-gray-900) 50%);
+            color: var(--color-white);
+            padding: 10px;
+            mix-blend-mode: difference;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include xl {
+            display: flex;
+            justify-content: center;
+            display: inline-block;
+        }
+
+
+        .laptop-image {
+
+            .black-macbook {
+                width: 600px;
+                margin-top: 50px;
+
+                @include sm {
+                    width: 650px;
+                    margin-top: 120px;
+                }
+
+                @include md {
+                    width: 650px;
+                    margin-top: 130px;
+                }
+
+                @include lg {
+                    width: 750px;
+                    margin-top: 65px;
+                }
+
+                @include xl {
+                    width: 750px;
+                    margin-top: 65px;
+                }
+            }
+        }
+    }
+}

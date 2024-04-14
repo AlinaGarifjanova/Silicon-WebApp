@@ -1,0 +1,14 @@
+﻿@model WebApp.Models.CombinedViewModel
+
+
+@{
+    Layout = "_AccountLayout";
+
+}
+
+
+<partial name="~/Views/Account/_AccountDetailsForm.cshtml" model="Model.Basic" />
+
+<partial name="~/Views/Account/_AccountAddress.cshtml" model="Model.Address" />
+
+

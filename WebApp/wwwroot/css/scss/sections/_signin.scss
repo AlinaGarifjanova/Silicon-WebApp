@@ -1,0 +1,80 @@
+.signin {
+    margin-bottom: 50px;
+    margin-top: 30px;
+
+    .container {
+        width: 95%;
+        display: grid;
+        justify-items: center;
+
+        @include md {
+            width: 50%;
+        }
+
+        @include xl {
+            width: 80%;
+        }
+
+        form {
+            @include xl {
+                width: 50%;
+            }
+
+            h1 {
+                margin-bottom: 0;
+            }
+
+            .form-content {
+                margin-top: 30px;
+                gap: 20px;
+
+                .checkbox-group {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+                button {
+                    width: 100%;
+                    grid-area: submit;
+                }
+
+                a {
+                    text-decoration: none;
+                    margin: 10px 0;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .social-login {
+            border-top: 1px solid var(--color-gray-400);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+
+            .btn-social-login {
+                width: 230px;
+                height: 45px;
+                background-color: var(--color-gray-200);
+                border-radius: 8px;
+                text-decoration: none;
+                transition: all 0.15s ease-in-out;
+                color: var(--color-gray-900);
+                padding: 10px;
+
+                &:hover {
+                    background-color: var (--color-gray-600);
+                    color: var(--color-gray-200);
+                }
+            }
+
+            .socialmedia-login {
+                display: flex;
+                gap: 15px;
+            }
+        }
+    }
+}

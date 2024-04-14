@@ -1,0 +1,49 @@
+﻿@model ContactFormViewModel
+
+
+<section id="contactform" class="contactform-box">
+    <div class="form-container">
+        <h2>Get In Contact With Us</h2>
+        <form method="post" asp-action="GetInTouch" asp-controller="Contact">
+            <input type="hidden" asp-for="Contact.HiddenSelectInput" />
+            <div class="form-content">
+                <div class="input-fullname input-group">
+                    <label class="input-label" asp-for="Contact.FullName"></label>
+                    <input asp-for="Contact.FullName"/>
+                    <span asp-validation-for="Contact.FullName"></span>
+                </div>
+
+                <div class="input-email input-group">
+                    <label class="input-label" asp-for="Contact.Email"></label>
+                    <input asp-for="Contact.Email" />
+                    <span asp-validation-for="Contact.Email"></span>
+                </div>
+
+                <div class="custom-select">
+                    <div class="custom-selected">All Services</div>
+                    <div class="custom-options">
+                        <div class="custom-option" data-value="all">All Services</div>
+                        @if (Model.Options != null)
+                        {
+                            @foreach (var option in Model.Options)
+                            {
+                                <div class="custom-option" data-value="@option.OptionName">@option.OptionName</div>
+                            }
+                        }
+                    </div>
+                </div>
+
+                <div class="input-message input-group">
+                    <label class="input-label" asp-for="Contact.Message"></label>
+                    <textarea asp-for="Contact.Message"></textarea>
+                    <span asp-validation-for="Contact.Message"></span>
+                    <button class="btn-theme" onsubmit="validatorContact()" type="submit">Send Contact Request</button>
+                </div>
+            </div>
+            @TempData["Status"]
+        </form>
+    </div>
+</section>
+
+
+<script src="~/js/contactform.js"></script>

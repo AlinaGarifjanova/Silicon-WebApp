@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    .number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        background-color: var(--color-gray-200);
+        text-decoration: none;
+        color: var(--color-gray-800);
+
+       &.active{
+           background-color: var(--color-gray-600);
+           color: var(--color-gray-200);
+       }
+        
+        &:hover{
+            text-decoration: none;
+            color: var(--color-gray-200);
+            background-color: var(--color-gray-100);
+        }
+
+    }
+}
